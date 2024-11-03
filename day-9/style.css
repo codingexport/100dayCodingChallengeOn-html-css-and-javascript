@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6-DQF2pBwNFV9KzPafu9RghrNF1tZ8J3AA&s) center center;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    color: antiquewhite;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(40, 38, 38, 0.725);
+    height: 100vh;
+    
+}
+.title{
+    font-size: larger;
+    text-transform: capitalize;
+    text-shadow: rgba(255, 204, 0, 0.655) 1px 0 10px;
+}
+.slog{
+    font-size: larger;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    text-shadow: rgba(255, 204, 0, 0.655) 1px 0 10px;
+}
+.countdown{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box input{
+    padding: 5px 16px;
+    border-radius: 10px;
+    background: linear-gradient(black,rgb(72, 73, 72));
+    width: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.box label{
+    padding: 10px;
+    font-size: larger;
+    text-transform: capitalize;
+    text-shadow: rgba(255, 204, 0, 0.655) 1px 0 10px;
+}

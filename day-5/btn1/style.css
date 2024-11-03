@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2rem 5rem;
+    border: 2px solid antiquewhite;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+a:before{
+    content: "Thank you💓";
+    position: absolute;
+    font-weight: bold;
+    color: #0e0909;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    transform: translate(-100%);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover:before {
+    transform: translate(0);
+}
