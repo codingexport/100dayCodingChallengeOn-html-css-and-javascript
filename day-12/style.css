@@ -1,0 +1,63 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#1e130c, #9a8478);
+    color: aliceblue;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#accordian {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100vh; /* Take full viewport height */
+}
+#accordian li{
+    list-style: none;
+    width: 100%;
+   margin-bottom: 10px;
+   background: linear-gradient(rgba(0, 0, 0, 0.042),rgba(255, 255, 0, 0.081));
+   color: #35e20e;
+   padding: 10px;
+   box-shadow: 0px 0px 10px 0px rgb(201, 129, 22);
+   border-radius: 8px;
+}
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(209, 228, 9);
+    cursor: pointer;
+}
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+#accordian label+input[type='radio']{
+ display: none;
+}
+#accordian .content{
+    padding: 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 18px;
+    font-style: italic;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordian label + input[type="radio"]:checked+.content{
+    max-height: 400px;
+}
