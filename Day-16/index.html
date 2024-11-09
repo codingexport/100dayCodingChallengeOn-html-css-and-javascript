@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080707;
+            background-image:
+                repeating-linear-gradient(to right, transparent 0 100px,
+                    #54545533 100px 101px),
+                repeating-linear-gradient(to bottom, transparent 0 100px,
+                    #54545533 100px 101px);
+        }
+
+        body::before {
+            position: absolute;
+            width: max(1700px, 90vw);
+            top: 0%;
+            bottom: 0%;
+            left: 50%;
+            height: 100%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(img/173854.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="img/1704559658359.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/trashed-1711878268-IMG_20240213_093418_913.webp"
+                    alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/WhatsApp Image 2024-11-08 at 23.33.15_5da05501.jpg"
+                    alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/WhatsApp Image 2024-11-08 at 23.33.15_8e3d7542.jpg"
+                    alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/nitin.jpg">
+
+            </div>
+            <div class=" item" style="--position: 6"><img src="img/WhatsApp Image 2024-11-08 at 23.33.15_9973d644.jpg"
+                    alt=""></div>
+            <div class="item" style="--position: 7"><img src="img/WhatsApp Image 2024-11-08 at 23.33.16_15f02d39.jpg"
+                    alt=""></div>
+            <div class="item" style="--position: 8"><img src="img/WhatsApp Image 2024-11-08 at 23.33.16_66c7dca3.jpg"
+                    alt=""></div>
+            <div class="item" style="--position: 9"><img src="img/1000131055.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="img/WhatsApp Image 2024-11-08 at 23.33.17_2387dce9.jpg"
+                    alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="Akhil">
+                Akhil
+            </h1>
+            <div class="author">
+                <h2 style="color: aqua;text-shadow: 1px 10px 15px  #0915fcf4;">Akhil</h2>
+                <p><b style="color: aqua;text-shadow: 1px 1px 15px #0915fcf4;">Web Design</b></p>
+                <p style="color: aqua;text-shadow: 10px 12px 15px #0915fcf4;">
+                    Follow me for more interesting landing page
+                </p>
+            </div>
+            <div class="model">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
