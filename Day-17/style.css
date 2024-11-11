@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Great+Vibes&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    margin: 20px;
+    background-color: #1a0611;
+    background-blend-mode: multiply,multiply;
+    color: aliceblue;
+
+}
+.card{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #1a0611;
+    color: #51535b;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 0px #c98116;
+    border-radius: 10px;
+}
+h1{
+    color: brown;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 2px 5px yellow;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+/* CSS for scroll indicator */
+.scroll-indicator {
+    height: 15px;
+    width: calc(100% - 6em);
+    position: fixed;
+    top: 10px;
+    left: 3em;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .scroll-indicator .progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 13px;
+    background: linear-gradient(to right, #1a0611, #ff9e3d, #ffffff, #ea0000, #6901fa, #0921f8, #0925f9);
+    box-shadow: 0 1px 10px rgba(160, 213, 2, 0.979); /* Lighting effect */
+    transition: width 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .scroll-indicator .progress.active {
+   
+    box-shadow: 0px 0 100px rgba(252, 249, 66, 0.9); /* Glow effect on scroll */
+  }
+  
