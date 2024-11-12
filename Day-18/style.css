@@ -20,12 +20,14 @@
   
   .js {
     color: yellow;
+    text-shadow: 2px 2px 5px rgb(255, 25, 0);
   }
   
   .typed-text {
-    color: #20c20e;
+    color: #0bfbeffe;
+    text-shadow: 2px 2px 5px rgb(149, 255, 0);
   }
   
   .cursor {
-    background: #20c20e;
+    background: #fecc41b5;
   }
